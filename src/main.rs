@@ -25,7 +25,7 @@ pub fn send_message(msg: String) {
     request_body.insert("text".to_string(), Value::String(msg));
     request_body.insert("chat_id".to_string(), json!(chat_id));
 
-    let mut res = client
+    client
         .post(&conn_url.to_string())
         .json(&request_body)
         .send()
