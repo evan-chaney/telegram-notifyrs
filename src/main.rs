@@ -33,7 +33,6 @@ pub fn send_message(msg: String) {
     println!("Telegram message sent successfully.")
 }
 
-
 fn main() {
     send_message(String::from("Hello, world!"));
 }
