@@ -17,7 +17,7 @@ pub fn send_message(msg: String) {
     ))
     .expect("Error building URL for Telegram-sendMessage");
 
-    let client = reqwest::Client::builder()
+    let client = reqwest::blocking::Client::builder()
         .build()
         .expect("Error building Telegram sendMessage request client");
 
