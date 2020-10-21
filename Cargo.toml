@@ -3,6 +3,12 @@ name = "telegram_notifyrs"
 version = "0.1.0"
 authors = ["Evan Chaney <evanachaney@gmail.com>"]
 edition = "2018"
+description = "Easily send single telegram messages!"
+readme = "README.md"
+repository = "https://github.com/evan-chaney/telegram-notifyrs"
+license-file = "LICENSE"
+keywords = ["telegram", "notification"]
+categories = ["api-bindings"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
