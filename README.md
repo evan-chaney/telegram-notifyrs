@@ -8,7 +8,7 @@ A simple way to send messages via Telegram in Rust. I found it difficult to find
 Include the crate under dependencies in your ```Cargo.toml```
 ```
 [dependencies]
-telegram_notifyrs = "0.1.0"
+telegram_notifyrs = "0.1.1"
 ```
 
 ### Simple Example
