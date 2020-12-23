@@ -29,6 +29,6 @@ fn main() {
         .expect("Missing TELEGRAM_CHAT_ID environment variable")
         .parse()
         .expect("Error parsing TELEGRAM_CHAT_ID as i64");
-    telegram_notifyrs::send_message("Test from library".to_string(), &token, chat_id).unwrap();
+    telegram_notifyrs::send_message("Test from library".to_string(), &token, chat_id);
 }
 ```
