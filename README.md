@@ -8,7 +8,7 @@ A simple way to send messages via Telegram in Rust. I found it difficult to find
 Include the crate under dependencies in your ```Cargo.toml```
 ```
 [dependencies]
-telegram_notifyrs = "0.1.1"
+telegram_notifyrs = "0.1.3"
 ```
 
 ### Simple Example
@@ -25,10 +25,10 @@ use telegram_notifyrs;
 
 fn main() {
     let token = env::var("TELEGRAM_BOT_TOKEN").expect("TELEGRAM_BOT_TOKEN not set");
-    let chat_id: i32 = env::var("TELEGRAM_CHAT_ID")
+    let chat_id: i64 = env::var("TELEGRAM_CHAT_ID")
         .expect("Missing TELEGRAM_CHAT_ID environment variable")
         .parse()
-        .expect("Error parsing TELEGRAM_CHAT_ID as i32");
+        .expect("Error parsing TELEGRAM_CHAT_ID as i64");
     telegram_notifyrs::send_message("Test from library".to_string(), &token, chat_id).unwrap();
 }
 ```
