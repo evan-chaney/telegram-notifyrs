@@ -13,6 +13,7 @@ pub fn send_message(
     let mut request_body = Map::new();
     request_body.insert("text".to_string(), Value::String(msg));
     request_body.insert("chat_id".to_string(), json!(chat_id));
+    request_body.insert("parse_mode".to_string(), Value::String("MarkdownV2".to_string()));
 
     let resp = ureq::post(&format!(
         "https://api.telegram.org/bot{token}/sendMessage",
